@@ -16,8 +16,8 @@ jobs:
     - name: Move contents to XXMITools folder
       run: |
         mkdir XXMITools
-        mv * XXMITools
-        mv .[^.]* XXMITools
+        shopt -s extglob
+        mv !(XXMITools) XXMITools
 
     - name: Create zip of repository
       run: zip -r repository-content.zip XXMITools
