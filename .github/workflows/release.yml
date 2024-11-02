@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Move contents to XXMITools folder
       run: |
@@ -26,7 +26,7 @@ jobs:
       run: zip -r XXMITools_v${{ github.ref_name }}.zip XXMITools
 
     - name: Create Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: XXMITools_v${{ github.ref_name }}.zip
         name: Release ${{ github.ref_name }}
