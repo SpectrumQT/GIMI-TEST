@@ -1,0 +1,53 @@
+; This file is intended to be executed by XXMI Launcher as part of model importer update
+;
+; API
+;
+; delete - Removes file or folder with target path relative to installed model importer folder
+; Notes:
+; * Target path must be located in Core or ShaderFixes folders
+; * Explicit removal of entire Core or ShaderFixes folder is not allowed
+; * Non-existent path will be ignored
+; Example usage:
+; `delete = ShaderFixes\Test.txt` - Remove `ShaderFixes\Test.txt` file
+; `delete = Core\Test` - Remove `Core\Test` folder and its contents
+
+
+[PreInstall]
+; Do something BEFORE package update
+
+[PostInstall]
+; Do something AFTER package update
+
+[PreLaunch]
+; Do something BEFORE game launch
+delete = ShaderFixes\00e3592cc87039cd-vs_replace.txt
+delete = ShaderFixes\3f67e8fbcd35911e-vs_replace.txt
+delete = ShaderFixes\8afb7cf4bdf16498-vs_replace.txt
+delete = ShaderFixes\42ea519379377965-vs_replace.txt
+delete = ShaderFixes\958c81d7eb2b5c84-vs_replace.txt
+delete = ShaderFixes\6324fa1eae4bd25c-vs_replace.txt
+delete = ShaderFixes\694346f7a4f392a2-vs_replace.txt
+delete = ShaderFixes\901032b8a4cdf787-vs_replace.txt
+delete = ShaderFixes\58660437e3c06faa-vs_replace.txt
+delete = ShaderFixes\ca15e550c2774d95-vs_replace.txt
+delete = ShaderFixes\d0c680ab5914dcea-vs_replace.txt
+delete = ShaderFixes\f7a15b4375ab68de-vs_replace.txt
+delete = ShaderFixes\a40a83e222fde9d5-vs_replace.txt
+delete = ShaderFixes\bf0c8aa094538450-vs_replace.txt
+delete = ShaderFixes\653c63ba4a73ca8b-vs_replace.txt
+delete = ShaderFixes\00e3592cc87039cd-vs_replace.bin
+delete = ShaderFixes\3f67e8fbcd35911e-vs_replace.bin
+delete = ShaderFixes\8afb7cf4bdf16498-vs_replace.bin
+delete = ShaderFixes\42ea519379377965-vs_replace.bin
+delete = ShaderFixes\958c81d7eb2b5c84-vs_replace.bin
+delete = ShaderFixes\6324fa1eae4bd25c-vs_replace.bin
+delete = ShaderFixes\694346f7a4f392a2-vs_replace.bin
+delete = ShaderFixes\901032b8a4cdf787-vs_replace.bin
+delete = ShaderFixes\58660437e3c06faa-vs_replace.bin
+delete = ShaderFixes\ca15e550c2774d95-vs_replace.bin
+delete = ShaderFixes\d0c680ab5914dcea-vs_replace.bin
+delete = ShaderFixes\f7a15b4375ab68de-vs_replace.bin
+delete = ShaderFixes\a40a83e222fde9d5-vs_replace.bin
+delete = ShaderFixes\bf0c8aa094538450-vs_replace.bin
+delete = ShaderFixes\653c63ba4a73ca8b-vs_replace.bin
+delete = Core\GIMI\Libraries\Offset\main.ini
